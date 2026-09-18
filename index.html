@@ -9,8 +9,32 @@
 <body>
 
     <!-- 1. HEADER -->
-    <header class="header">
-        ...
+    <header class="header" role="banner">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo" aria-label="Patitas Felices - Inicio">
+                <span class="logo-icon" aria-hidden="true">🐾</span>
+                Patitas Felices
+            </a>
+
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul class="nav-list" id="navList">
+                    <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link" data-section="servicios">Servicios</a></li>
+                    <li><a href="#citas" class="nav-link" data-section="citas">Agendar Cita</a></li>
+                    <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="navList">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
