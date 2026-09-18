@@ -96,8 +96,114 @@
         </section>
 
         <!-- 3. CITA  -->
-        <section id="cita">
-            ...
+        <section id="citas" class="appointments section" aria-labelledby="citas-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="citas-title">Agenda tu Cita</h2>
+                </header>
+
+                <div class="appointment-wrapper">
+                    <div class="appointment-form-card">
+                        <header class="form-header">
+                            <h3>Nueva Cita</h3>
+                            <p>Todos los campos marcados con <span class="required" aria-hidden="true">*</span> son
+                                obligatorios.</p>
+                        </header>
+
+                        <form id="form-cita" novalidate>
+                            <div class="form-group">
+                                <label class="form-label" for="dueño">Nombre del Propietario <span class="required"
+                                        aria-hidden="true">*</span></label>
+                                <input type="text" id="dueño" name="dueño" class="form-input" required
+                                    placeholder="Ej. Ana Pérez" autocomplete="name" aria-describedby="dueño-error">
+                                <span class="form-error" id="dueño-error" aria-live="polite">Por favor ingresa tu
+                                    nombre</span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="mascota">Nombre de la Mascota <span class="required"
+                                            aria-hidden="true">*</span></label>
+                                    <input type="text" id="mascota" name="mascota" class="form-input" required
+                                        placeholder="Ej. Firulais" autocomplete="off" aria-describedby="mascota-error">
+                                    <span class="form-error" id="mascota-error" aria-live="polite">Por favor ingresa el
+                                        nombre de tu mascota</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="tipo-mascota">Tipo <span class="required"
+                                            aria-hidden="true">*</span></label>
+                                    <select id="tipo-mascota" name="tipo-mascota" class="form-select" required
+                                        aria-describedby="tipo-error">
+                                        <option value="">Selecciona...</option>
+                                        <option value="perro">🐕 Perro</option>
+                                        <option value="gato">🐈 Gato</option>
+                                        <option value="otro">🐾 Otro</option>
+                                    </select>
+                                    <span class="form-error" id="tipo-error" aria-live="polite">Por favor selecciona el
+                                        tipo</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="servicio">Servicio <span class="required"
+                                        aria-hidden="true">*</span></label>
+                                <select id="servicio" name="servicio" class="form-select" required
+                                    aria-describedby="servicio-error">
+                                    <option value="">Selecciona un servicio...</option>
+                                    <option value="Consulta General">Consulta General</option>
+                                    <option value="Vacunación">Vacunación</option>
+                                    <option value="Estética Canina">Estética Canina</option>
+                                </select>
+                                <span class="form-error" id="servicio-error" aria-live="polite">Por favor selecciona un
+                                    servicio</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="fecha">Fecha y Hora <span class="required"
+                                        aria-hidden="true">*</span></label>
+                                <input type="datetime-local" id="fecha" name="fecha" class="form-input" required
+                                    aria-describedby="fecha-error">
+                                <span class="form-error" id="fecha-error" aria-live="polite">Por favor selecciona una
+                                    fecha y hora válida</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="notas">Notas adicionales</label>
+                                <textarea id="notas" name="notas" class="form-input" rows="3"
+                                    placeholder="Alergias, medicamentos, observaciones..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">
+                                <span class="btn-text">Confirmar Cita</span>
+                                <span class="btn-loading" style="display:none;" aria-hidden="true">
+                                    <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+                                        <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+                                    </svg>
+                                    Agendando...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <aside class="appointments-list-card" aria-labelledby="lista-title">
+                        <header class="list-header">
+                            <h3 id="lista-title">Citas Programadas</h3>
+                            <span class="appointments-count" id="appointmentsCount">0 citas</span>
+                        </header>
+
+                        <div class="appointments-list" id="lista-citas" role="list"
+                            aria-label="Lista de citas agendadas">
+                            <div class="no-appointments" id="noCitasMsg">
+                                <h4>No hay citas programadas</h4>
+                                <p>Tu próxima cita aparecerá aquí</p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </section>
 
         <!-- 4. CONTÁCTANOS  -->
