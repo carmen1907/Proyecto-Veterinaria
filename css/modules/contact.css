@@ -29,8 +29,8 @@
 }
 
 .contact-icon {
-    width: 68px;
-    height: 68px;
+    width: 66px;
+    height: 66px;
     border-radius: var(--radius);
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     display: flex;
