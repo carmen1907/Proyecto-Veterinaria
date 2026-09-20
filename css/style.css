@@ -1,10 +1,10 @@
 /* ESTILOS PRINCIPALES */
 
-@import url('./modules/services.css');
-@import url('./modules/Appointments.css');
+@import url('./modules/variable.css');
 @import url('./modules/header.css');
 @import url('./modules/hero.css');
-@import url('./modules/footer.css');
-@import url('./modules/variable.css');
+@import url('./modules/services.css');
+@import url('./modules/appointments.css');
 @import url('./modules/contact.css');
+@import url('./modules/footer.css');
 @import url('./modules/toasts.css');

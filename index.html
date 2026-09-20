@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Veterinaria Patitas Felices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -53,46 +56,193 @@
         <section id="servicios" class="services section" aria-labelledby="servicios-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="servicios-title">Nuestros Servicios</h2>
+                    <div class="section-tag">
+                        <span class="tag-icon">✨</span> Especialidades & Cuidados
+                    </div>
+                    <h2 id="servicios-title">Nuestros <span>Servicios Médicos</span></h2>
+                    <p class="section-subtitle">Atención integral y personalizada respaldada por especialistas dedicados, quirófano equipado y tecnología diagnóstica de última generación para tus mascotas.</p>
                 </header>
 
                 <div class="services-grid">
-                    <!-- Servicio 1 -->
-                    <div class="service-card">
-                        <div class="service-icon">🩺</div>
+                    <!-- Servicio 1: Consulta General -->
+                    <article class="service-card featured-card">
+                        <div class="service-card-top">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon" aria-hidden="true">🩺</div>
+                            </div>
+                            <span class="service-badge badge-primary">Salud Preventiva</span>
+                        </div>
                         <h3>Consulta General</h3>
-                        <p>Revisiones integrales de salud, medicina preventiva, diagnósticos tempranos y planes de vacunación a la medida.</p>
-                    </div>
-                    <!-- Servicio 2 -->
-                    <div class="service-card">
-                        <div class="service-icon">💉</div>
+                        <p class="service-desc">Revisiones integrales de salud, medicina preventiva, diagnósticos tempranos y esquemas de vacunación adaptados a cada etapa.</p>
+                        <ul class="service-perks" aria-label="Beneficios de Consulta General">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Chequeo físico completo y peso
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Vacunación y desparasitación
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Asesoría nutricional personalizada
+                            </li>
+                        </ul>
+                        <a href="#citas" class="service-action-btn" data-service-select="Consulta General">
+                            <span>Agendar Consulta</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <!-- Servicio 2: Cirugía Veterinaria -->
+                    <article class="service-card">
+                        <div class="service-card-top">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon" aria-hidden="true">💉</div>
+                            </div>
+                            <span class="service-badge">Quirófano Avanzado</span>
+                        </div>
                         <h3>Cirugía Veterinaria</h3>
-                        <p>Procedimientos quirúrgicos en quirófanos equipados con tecnología de última generación y anestesia monitorizada.</p>
-                    </div>
-                    <!-- Servicio 3 -->
-                    <div class="service-card">
-                        <div class="service-icon">🛁</div>
+                        <p class="service-desc">Procedimientos quirúrgicos generales y especializados en quirófanos estériles con anestesia inhalatoria y monitoreo multiparamétrico.</p>
+                        <ul class="service-perks" aria-label="Beneficios de Cirugía">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Esterilizaciones y tejidos blandos
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Monitorización constante de signos
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Hospitalización postquirúrgica
+                            </li>
+                        </ul>
+                        <a href="#citas" class="service-action-btn" data-service-select="Cirugía Veterinaria">
+                            <span>Agendar Cirugía</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <!-- Servicio 3: Peluquería y Estética -->
+                    <article class="service-card">
+                        <div class="service-card-top">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon" aria-hidden="true">🛁</div>
+                            </div>
+                            <span class="service-badge badge-amber">Spa & Estética</span>
+                        </div>
                         <h3>Peluquería y Estética</h3>
-                        <p>Baños terapéuticos, cortes de raza, higiene de oídos y cuidado especializado para mantener la piel y pelaje impecables.</p>
-                    </div>
-                    <!-- Servicio 4 (Nuevo) -->
-                    <div class="service-card">
-                        <div class="service-icon">🩻</div>
+                        <p class="service-desc">Baños relajantes y dermatológicos, cortes profesionales por raza, profilaxis de oídos y cuidado estético con productos hipoalergénicos.</p>
+                        <ul class="service-perks" aria-label="Beneficios de Peluquería">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Baños medicinales y cosméticos
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Corte higiénico y corte de uñas
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Cuidado dermatológico especial
+                            </li>
+                        </ul>
+                        <a href="#citas" class="service-action-btn" data-service-select="Peluquería y Estética">
+                            <span>Agendar Estética</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <!-- Servicio 4: Diagnóstico por Imagen -->
+                    <article class="service-card">
+                        <div class="service-card-top">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon" aria-hidden="true">🩻</div>
+                            </div>
+                            <span class="service-badge">Alta Precisión</span>
+                        </div>
                         <h3>Diagnóstico por Imagen</h3>
-                        <p>Estudios radiográficos y ecográficos de alta precisión para detectar con exactitud cualquier patología interna.</p>
-                    </div>
-                    <!-- Servicio 5 (Nuevo) -->
-                    <div class="service-card">
-                        <div class="service-icon">🦷</div>
+                        <p class="service-desc">Estudios de ecografía abdominal y radiología digital directa para obtener diagnósticos rápidos, precisos y no invasivos.</p>
+                        <ul class="service-perks" aria-label="Beneficios de Diagnóstico">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Rayos X digitales de alta resolución
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Ecografías abdominales y cardíacas
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Resultados e informes inmediatos
+                            </li>
+                        </ul>
+                        <a href="#citas" class="service-action-btn" data-service-select="Diagnóstico por Imagen">
+                            <span>Agendar Estudio</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <!-- Servicio 5: Odontología Veterinaria -->
+                    <article class="service-card">
+                        <div class="service-card-top">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon" aria-hidden="true">🦷</div>
+                            </div>
+                            <span class="service-badge">Salud Bucal</span>
+                        </div>
                         <h3>Odontología Veterinaria</h3>
-                        <p>Limpiezas dentales ultrasónicas, extracciones y prevención de enfermedades periodontales para asegurar una sonrisa sana.</p>
-                    </div>
-                    <!-- Servicio 6 (Nuevo) -->
-                    <div class="service-card">
-                        <div class="service-icon">🚑</div>
+                        <p class="service-desc">Limpieza dental por ultrasonido, pulido, tratamiento de sarro y gingivitis para prevenir infecciones y preservar la dentadura sana.</p>
+                        <ul class="service-perks" aria-label="Beneficios de Odontología">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Profilaxis dental ultrasónica
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Extracciones y cirugías orales
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Tratamiento de halitosis y encías
+                            </li>
+                        </ul>
+                        <a href="#citas" class="service-action-btn" data-service-select="Odontología Veterinaria">
+                            <span>Agendar Limpieza</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <!-- Servicio 6: Urgencias 24/7 -->
+                    <article class="service-card featured-card">
+                        <div class="service-card-top">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon" aria-hidden="true">🚑</div>
+                            </div>
+                            <span class="service-badge badge-emergency">24/7 Disponible</span>
+                        </div>
                         <h3>Urgencias 24/7</h3>
-                        <p>Atención médica de emergencia y cuidados intensivos disponibles en cualquier momento para salvaguardar la vida de tu mascota.</p>
-                    </div>
+                        <p class="service-desc">Servicio de emergencias continuas y cuidados críticos con médicos de guardia para atender cualquier situación de riesgo vital.</p>
+                        <ul class="service-perks" aria-label="Beneficios de Urgencias">
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Atención médica sin cita previa
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Unidad de cuidados intensivos y oxígeno
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                Estabilización de traumas y envenenamientos
+                            </li>
+                        </ul>
+                        <a href="#contacto" class="service-action-btn" data-service-select="Urgencias 24/7">
+                            <span>Llamar a Urgencias</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
@@ -153,9 +303,12 @@
                                 <select id="servicio" name="servicio" class="form-select" required
                                     aria-describedby="servicio-error">
                                     <option value="">Selecciona un servicio...</option>
-                                    <option value="Consulta General">Consulta General</option>
-                                    <option value="Vacunación">Vacunación</option>
-                                    <option value="Estética Canina">Estética Canina</option>
+                                    <option value="Consulta General">🩺 Consulta General</option>
+                                    <option value="Cirugía Veterinaria">💉 Cirugía Veterinaria</option>
+                                    <option value="Peluquería y Estética">🛁 Peluquería y Estética</option>
+                                    <option value="Diagnóstico por Imagen">🩻 Diagnóstico por Imagen</option>
+                                    <option value="Odontología Veterinaria">🦷 Odontología Veterinaria</option>
+                                    <option value="Urgencias 24/7">🚑 Urgencias 24/7</option>
                                 </select>
                                 <span class="form-error" id="servicio-error" aria-live="polite">Por favor selecciona un
                                     servicio</span>
@@ -269,8 +422,11 @@
                     <h4 class="footer-title">Servicios</h4>
                     <div class="footer-links">
                         <a href="#servicios">Consulta General</a>
-                        <a href="#servicios">Vacunación</a>
-                        <a href="#servicios">Estética Canina</a>
+                        <a href="#servicios">Cirugía Veterinaria</a>
+                        <a href="#servicios">Peluquería & Spa</a>
+                        <a href="#servicios">Diagnóstico por Imagen</a>
+                        <a href="#servicios">Odontología</a>
+                        <a href="#servicios">Urgencias 24/7</a>
                     </div>
                 </nav>
 
