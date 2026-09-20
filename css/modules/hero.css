@@ -1,0 +1,32 @@
+.hero {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(6, 95, 70, 0.95)), url('https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 9rem 2rem;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content { max-width: 900px; }
+
+.hero h1 {
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+}
+
+.hero h1 span { color: var(--secondary); }
+
+.hero p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
