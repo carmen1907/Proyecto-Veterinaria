@@ -15,7 +15,7 @@ export function initAppointmentForm() {
         });
     });
 
-    // Envío del formulario
+    // Envío del formulario js
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
@@ -32,7 +32,7 @@ export function initAppointmentForm() {
         if (btnText) btnText.style.display = 'none';
         if (btnLoading) btnLoading.style.display = 'inline-flex';
 
-        // Simular envío a servidor
+        // Simular el envío a servidor
         await new Promise(resolve => setTimeout(resolve, 800));
 
         const formData = new FormData(form);
