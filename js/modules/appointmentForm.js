@@ -15,7 +15,7 @@ export function initAppointmentForm() {
         });
     });
 
-    // Envío del formulario
+    // Envío del formulario js
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
