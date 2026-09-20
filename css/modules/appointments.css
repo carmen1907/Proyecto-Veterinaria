@@ -130,7 +130,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(233, 210, 210);
     font-size: 1.35rem;
     flex-shrink: 0;
 }
