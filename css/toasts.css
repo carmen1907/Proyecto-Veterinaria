@@ -41,8 +41,8 @@
 .toast-message { font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem; }
 
 .toast-close {
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
