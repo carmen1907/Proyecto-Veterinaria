@@ -123,8 +123,8 @@
 .appointment-item:hover { background: var(--surface); box-shadow: var(--shadow-sm); border-color: var(--border); }
 
 .appointment-icon {
-    width: 52px;
-    height: 52px;
+    width: 53px;
+    height: 53px;
     border-radius: var(--radius);
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     display: flex;
