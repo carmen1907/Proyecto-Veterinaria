@@ -3,6 +3,7 @@
 import { initServices } from './modules/services.js';
 import { initAppointmentForm } from './modules/appointmentForm.js';
 import { initAppointmentsList } from './modules/appointmentList.js';
+import { initAppointmentsList } from './modules/navigation.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
