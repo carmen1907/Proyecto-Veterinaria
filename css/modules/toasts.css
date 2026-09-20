@@ -11,8 +11,8 @@
 .toast {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
-    padding: 1.25rem 1.75rem;
+    gap: 1.15rem;
+    padding: 1.2rem 1.7rem;
     background: var(--surface);
     border: 1px solid var(--border-light);
     border-radius: var(--radius);
