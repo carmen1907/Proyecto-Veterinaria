@@ -31,7 +31,7 @@
 .toast.error { border-left: 5px solid var(--accent); }
 .toast.info { border-left: 5px solid var(--primary-light); }
 
-.toast-icon { width: 25px; height: 25px; flex-shrink: 0; }
+.toast-icon { width: 26px; height: 26px; flex-shrink: 0; }
 .toast.success .toast-icon { color: var(--primary); }
 .toast.error .toast-icon { color: var(--accent); }
 .toast.info .toast-icon { color: var(--primary-light); }
@@ -41,8 +41,8 @@
 .toast-message { font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem; }
 
 .toast-close {
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
