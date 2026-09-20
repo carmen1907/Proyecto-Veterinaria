@@ -31,7 +31,7 @@
 .toast.error { border-left: 5px solid var(--accent); }
 .toast.info { border-left: 5px solid var(--primary-light); }
 
-.toast-icon { width: 26px; height: 26px; flex-shrink: 0; }
+.toast-icon { width: 25px; height: 25px; flex-shrink: 0; }
 .toast.success .toast-icon { color: var(--primary); }
 .toast.error .toast-icon { color: var(--accent); }
 .toast.info .toast-icon { color: var(--primary-light); }
