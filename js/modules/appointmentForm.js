@@ -7,7 +7,7 @@ export function initAppointmentForm() {
 
     setMinDateTime();
 
-    // Validación en tiempo real
+    // Validación en tiempo real de js
     form.querySelectorAll('input, select, textarea').forEach(input => {
         input.addEventListener('blur', () => validateField(input));
         input.addEventListener('input', () => {
