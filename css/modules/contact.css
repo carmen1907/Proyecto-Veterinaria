@@ -51,7 +51,7 @@
 
 .contact-card p, .contact-card a { 
     color: var(--text-secondary); 
-    font-size: 1rem; 
+    font-size: 0.95rem; 
     line-height: 1.8; 
 }
 
