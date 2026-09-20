@@ -1,8 +1,3 @@
-/**
- * MÓDULO DE NOTIFICACIONES Y UTILIDADES UI (DEV 4)
- * Sistema de alertas flotantes (Toasts) y sanitización
- */
-
 export function escapeHtml(text) {
     if (!text) return '';
     const div = document.createElement('div');
