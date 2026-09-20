@@ -171,7 +171,7 @@
     flex-shrink: 0;
 }
 
-.appointment-delete:hover { background: rgba(239, 68, 68, 0.1); color: var(--accent); }
+.appointment-delete:hover { background: rgba(36, 10, 10, 0.1); color: var(--accent); }
 
 .no-appointments {
     text-align: center;
