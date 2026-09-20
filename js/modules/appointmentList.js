@@ -41,7 +41,7 @@ export function renderAppointments() {
     appointmentsCount.textContent = `${appointmentState.appointments.length} cita${appointmentState.appointments.length !== 1 ? 's' : ''}`;
     listaCitas.innerHTML = appointmentState.appointments.map((apt, index) => createAppointmentHTML(apt, index)).join('');
     
-    // Asignar eventos de eliminación
+    // Asignar eventos de eliminación js
     listaCitas.querySelectorAll('.appointment-delete').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
